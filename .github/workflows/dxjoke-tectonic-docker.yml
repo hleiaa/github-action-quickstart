@@ -13,13 +13,6 @@ jobs:
       - name: Upload pdf
         uses: actions/upload-artifact@v3
         with:
-         name: main.zip
-         path: main.pdf 
-         if-no-files-found: error
-
-
-
-#         with:
-#           name: main.zip
-#           path: src/main.pdf
-#           if-no-files-found: error
+          name: main.zip
+          path: src/main.pdf
+          if-no-files-found: error
