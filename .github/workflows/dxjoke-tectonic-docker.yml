@@ -12,6 +12,6 @@ jobs:
         run: docker run --mount src=$GITHUB_WORKSPACE/src,target=/usr/src/tex,type=bind dxjoke/tectonic-docker:latest /bin/sh -c "tectonic main.tex"
       - name: Upload PDF
         run: |
-          git add main.pdf
+          git add src/main.pdf
           git commit -m "update PDF file"
           git push
