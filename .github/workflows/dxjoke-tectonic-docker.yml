@@ -16,4 +16,5 @@ jobs:
           git config user.email abc@gmail.com           
           git add .           
           git commit -m "add PDF file"           
-          git push
+          git push origin HEAD:main --force
+
